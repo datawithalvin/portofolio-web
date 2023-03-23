@@ -25,6 +25,13 @@ p {
     line-height: 1.2;
 }
 
+#main2 p {
+    font-weight: normal;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
 .list {
     list-style: none;
     padding: 0;
