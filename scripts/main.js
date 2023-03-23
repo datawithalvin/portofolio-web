@@ -1,3 +1,4 @@
+// home and back to top button
 document.addEventListener('DOMContentLoaded', () => {
   const backToTopButton = document.createElement('button');
   backToTopButton.textContent = 'Back to Top';
@@ -34,3 +35,33 @@ document.addEventListener('DOMContentLoaded', () => {
     window.location.href = '/portofolio-web/index.html';
   });
 });
+
+
+// navigation buttons
+const listItems = document.querySelectorAll(".list-item");
+let currentItemIndex = 0;
+
+function updateNavigationButtons() {
+  const prevButton = document.getElementById("prev-button");
+  const nextButton = document.getElementById("next-button");
+
+  prevButton.disabled = currentItemIndex === 0;
+  nextButton.disabled = currentItemIndex === listItems.length - 1;
+}
+
+function navigate(direction) {
+  listItems[currentItemIndex].classList.toggle("hidden");
+  currentItemIndex += direction;
+  listItems[currentItemIndex].classList.toggle("hidden");
+  updateNavigationButtons();
+}
+
+document.getElementById("prev-button").addEventListener("click", () => navigate(-1));
+document.getElementById("next-button").addEventListener("click", () => navigate(1));
+
+listItems.forEach((item, index) => {
+  if (index !== currentItemIndex) {
+    item.classList.add("hidden");
+  }
+});
+updateNavigationButtons();
