@@ -18,6 +18,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
+    text-align: justify;
 }
 
 h1 {
@@ -80,3 +81,17 @@ p {
     font-size: 0.9rem;
 }
 
+.buttons-container button {
+    background-color: #0070f3;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .buttons-container button:hover {
+    background-color: #0059b3;
+  }
+  
