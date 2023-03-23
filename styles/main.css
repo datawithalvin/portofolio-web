@@ -14,7 +14,7 @@ body {
     padding: 2rem;
 }
 
-#main2 {
+#main-content {
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
@@ -31,7 +31,7 @@ p {
     line-height: 1.2;
 }
 
-#main2 p {
+#main-content p {
     font-weight: normal;
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
