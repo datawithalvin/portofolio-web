@@ -21,6 +21,16 @@ body {
     text-align: justify;
 }
 
+.top-image {
+    display: inline-block;
+    width: max-content;
+    margin-bottom: 1.5rem;
+}
+
+.top-image img {
+    width: 75%;
+}
+
 h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -81,7 +91,7 @@ p {
     font-size: 0.9rem;
 }
 
-.buttons-container button {
+/* .buttons-container button {
     background-color: #0070f3;
     color: #fff;
     padding: 0.5rem 1rem;
@@ -94,4 +104,4 @@ p {
   .buttons-container button:hover {
     background-color: #0059b3;
   }
-  
+   */
