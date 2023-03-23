@@ -6,7 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
   backToTopButton.style.right = '20px';
   backToTopButton.style.display = 'none'; // Hide the button by default
 
+  const homeButton = document.createElement('button');
+  homeButton.textContent = 'Back to Home';
+  homeButton.style.position = 'absolute';
+  homeButton.style.left = '20px';
+  homeButton.style.bottom = '20px';
+
   document.body.appendChild(backToTopButton);
+  document.getElementById('page-footer').appendChild(homeButton);
 
   window.addEventListener('scroll', () => {
     if (window.pageYOffset > 100) {
@@ -23,11 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  const homeButton = document.createElement('button');
-  homeButton.textContent = 'Back to Home';
-  homeButton.style.position = 'fixed';
-  homeButton.style.bottom = '20px';
-  homeButton.style.left = '20px';
-
-  document.getElementById('page-footer').appendChild(homeButton);
+  homeButton.addEventListener('click', () => {
+    window.location.href = '/portofolio-web/index.html';
+  });
 });
